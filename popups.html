@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/popup.css">
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="header-title text-center">Chrome extension Popup</div>
+        <div class="summary">Background description (<span>验证background生命周期和单实例特性</span>)</div>
+        <div class="content">
+            <button type="button" id="open-background" class="button">打开background</button>
+            <button type="button" id="invoke-background" class="button">调用background页JS方法</button>
+            <button type="button" id="get-setting-background" class="button">获取background页标题</button>
+            <button type="button" id="set-setting-background" class="button">设置background页标题</button>
+        </div>
+        <!--<hr />-->
+        <div class="summary">窗口操作演示</div>
+        <div class="content">
+            <button type="button" id="new-windows" class="button">新窗口打开百度</button>
+            <button type="button" id="window-animate" class="button">执行简单的窗口动画</button>
+            <button type="button" id="window-max" class="button">将当前窗口最大化</button>
+            <button type="button" id="window-min" class="button">将当前窗口最小化</button>
+            <button type="button" id="close-win-all-tabs" class="button">关闭当前窗口所有标签(慎点)</button>
+        </div>
+        <!--<hr />-->
+        <div class="summary">标签操作演示</div>
+        <div class="content">
+            <button type="button" id="new-tab-open-url" class="button">新标签打开百度</button>
+            <button type="button" id="curr-tab-open-url" class="button">当前标签打开网页</button>
+            <button type="button" id="get-curr-tab-id" class="button">获取当前标签页ID</button>
+            <button type="button" id="toggle-first-tab" class="button">切换到第一个标签</button>
+        </div>
+        <div class="summary">popup与content-script交互</div>
+        <div class="content">
+            <button type="button" id="short-conn-message" class="button">短连接发送消息到content-script</button>
+            <button type="button" id="long-conn-message" class="button">长连接发送消息到content-script</button>
+        </div>
+        <div class="summary">DOM交互演示</div>
+        <div class="content">
+            <button type="button" id="modify-bg-color" class="button">修改背景颜色</button>
+            <button type="button" id="modify-font-size" class="button">修改字体大小</button>
+        </div>
+        <div class="summary">国际化演示</div>
+        <div class="content">
+            <button type="button" id="test-i18n" class="button">(另外请到插件列表页查看描述的变化)</button>
+        </div>
+        <div class="summary">其它</div>
+        <div class="content">
+            <button type="button" id="show-badge" class="button">显示Badge</button>
+            <button type="button" id="hide-badge" class="button">隐藏Badge</button>
+            <button type="button" id="show-notifications" class="button">显示桌面通知</button>
+            <button type="button" id="check-media" class="button">检测网页视频</button>
+        </div>
+        <div class="summary">更多</div>
+        <div class="content">
+            <button type="button" id="baidu-ads" class="button">百度广告</button>
+            <button type="button" id="context-menu" class="button">右键菜单</button>
+            <button type="button" id="omnibox" class="button">omnibox</button>
+            <button type="button" id="show-picture" class="button">图片大小演示</button>
+            <button type="button" id="show-devtools" class="button">devtools演示</button>
+            <button type="button" id="show-sidebar" class="button">sidebar演示</button>
+        </div>
+        <script src="js/popups.js"></script>
+    </body>
+</html>
